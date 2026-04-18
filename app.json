@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "FitnessFab",
+    "slug": "fitness-fab",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FF6B35"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.fitnessfab.app",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "FitnessFab reads your health data to provide personalized workout and nutrition recommendations.",
+        "NSHealthUpdateUsageDescription": "FitnessFab writes workout data to Apple Health to keep your fitness history up to date."
+      },
+      "entitlements": {
+        "com.apple.developer.healthkit": true,
+        "com.apple.developer.healthkit.access": []
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FF6B35"
+      },
+      "package": "com.fitnessfab.app",
+      "permissions": [
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.BODY_SENSORS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "15.0"
+          }
+        }
+      ]
+    ],
+    "scheme": "fitnessfab",
+    "extra": {
+      "pelotonClientId": "",
+      "myNetDiaryClientId": "",
+      "myNetDiaryClientSecret": ""
+    }
+  }
+}
