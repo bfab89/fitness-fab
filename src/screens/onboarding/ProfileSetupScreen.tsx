@@ -10,7 +10,6 @@ import { OnboardingStackParamList, Gender, FitnessLevel } from '../../types';
 import { Colors, Spacing, BorderRadius, FontSize, FontWeight, Shadow } from '../../constants/theme';
 import { useAppDispatch } from '../../store/hooks';
 import { setProfile } from '../../store/userSlice';
-import 'react-native-get-random-values';
 
 type Props = {
   navigation: NativeStackNavigationProp<OnboardingStackParamList, 'ProfileSetup'>;
